@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Form</title>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+    }
+    span {
+      height: 25px;
+      overflow: hidden;
+      display: inline-block;
+      width: 80px;
+      text-align: justify;
+      vertical-align:top;
+    }
+  </style>
+</head>
+<body>
+  <form action="#">
+    <p style="margin-left: 100px;">学生信息登记表</p>
+
+    <span>姓名：<i style="display: inline-block;width: 100%; height: 0"></i></span>
+    <input type="text">
+    <br>
+
+    <span>性别：<i style="display: inline-block;width: 100%; height: 0"></i></span>
+    <input type="radio" name="sex" checked>
+    <input type="radio" name="sex">
+    <br>
+
+    <span>出生日期：<i style="display: inline-block;width: 100%; height: 0"></i></span>
+    <input type="number" min="1900" max="2019">年
+    <input type="number" min="1" max="12">月
+    <input type="number" min="1" max="31">日
+    <br>
+
+    <span>个人爱好：<i style="display: inline-block;width: 100%; height: 0"></i></span>
+    <input type="checkbox">旅游
+    <input type="checkbox">艺术
+    <input type="checkbox">上网
+    <input type="checkbox">登山
+    <input type="checkbox">看电影
+    <input type="checkbox">其它
+  </form>
+</body>
+</html>

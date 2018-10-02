@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Judge max & min</title>
+  <script>
+    function btnClick() {
+      document.getElementById('output').value = document.getElementById('input').value;
+    }
+  </script>
+  <style>
+    #reset,
+    #submit {
+      margin: 0 25px;
+    }
+  </style>
+</head>
+<body>
+  <h1>字符串复制</h1>
+  <form action="#">
+    输入<input type="text" id="input"><br>
+    重复<input type="text" id="output" disabled><br>
+
+    <input type="submit" value="开始" onclick="btnClick()" id="submit">
+    <input type="reset" value="清空" id="reset">
+  </form>
+</body>
+</html>

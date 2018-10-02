@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Judge Prime Number</title>
+  <script>
+    function btnClick() {
+      var input = document.getElementById('input').value;
+      var output = "It is a prime number."
+      if (input < 2) {
+        document.getElementById('output').value = "It isn't a prime number.";
+        return ;
+      }
+      for (let index = 2; index < Math.sqrt(input); index++) {
+        if (input % index == 0) {
+          output = "It isn't a prime number."
+        }
+      }
+      document.getElementById('output').value = output;
+    }
+  </script>
+  <style>
+    #reset,
+    #submit {
+      margin: 0 25px;
+    }
+  </style>
+</head>
+<body>
+  <h1>判断素数</h1>
+  <form action="#">
+    整数：<input type="number" id="input"><br>
+    结果：<input type="text" id="output" disabled><br>
+
+    <input type="submit" value="计算" onclick="btnClick()" id="submit">
+    <input type="reset" value="清空" id="reset">
+  </form>
+</body>
+</html>
